@@ -1,0 +1,13 @@
+<div class="fact-details" appHighlightName>
+  <div class="fact-details-text">
+    <span
+      ><b>"{{ fact.text }}"</b></span
+    >
+  </div>
+  <div class="user-info">
+    <img [src]="fact.user.photo" alt="User Avatar" class="avatar" />
+    <p class="user-info-name">
+      {{ fact.user | userDisplay }}
+    </p>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="card">
+  @if (fact().imagePath) {
+  <div class="card-image-wrapper">
+    <img
+      class="card-image"
+      src="https://cataas.com/cat"
+      alt="Avatar"
+      style="width: 100%"
+      [routerLink]="['fact', fact()._id]"
+    />
+  </div>
+  }
+  <div class="card-details">
+    <h4 class="card-title">
+      <b [title]="fact().text">{{ fact().text }}</b>
+    </h4>
+    <p>{{ fact().createdAt | date : "dd/MM/yyyy" }}</p>
+  </div>
+</div>

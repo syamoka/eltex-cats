@@ -1,0 +1,14 @@
+.fact-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.header {
+  background-image: linear-gradient(120deg, #155799, #159957);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  &-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &-title {
+      color: white;
+      font-size: 2.25rem;
+      @media screen and (max-width: 425px) {
+        font-size: 1rem;
+      }
+    }
+  }
+  &-routes {
+    a {
+      all: unset;
+      display: inline-block;
+      color: rgba(255, 255, 255, 0.7);
+      background-color: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.2);
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 0.3rem;
+      padding: 0.25rem;
+      cursor: pointer;
+    }
+  }
+}

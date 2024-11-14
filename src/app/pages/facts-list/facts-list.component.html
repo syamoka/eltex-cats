@@ -1,0 +1,10 @@
+<div class="facts">
+  <div class="facts-container-header">Facts</div>
+  <div class="facts-container">
+    @if((facts$|async); as facts) { @for (fact of facts; track fact._id) {
+    <app-fact-card [fact]="fact"></app-fact-card>
+    } } @else {
+    <app-loader></app-loader>
+    }
+  </div>
+</div>
